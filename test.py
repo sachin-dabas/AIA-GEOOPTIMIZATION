@@ -1,13 +1,14 @@
 import Rhino.Geometry as rg
 
-grid =[]
-for i in range(10):
-    for j in range(10):
-        grid.append( rg.Point3d(i, j, 0))
+grid = []
+for i in range(50):
+    for j in range(50):
+        grid.append(rg.Point3d(i,j,0))
 
 a = grid
 
+line = rg.Line(grid[0], grid[50])
 
-line = rg.Line(grid[0], grid[30])
+length = line.Length
 
-b = line.Length
+comment = 'this is a test'
