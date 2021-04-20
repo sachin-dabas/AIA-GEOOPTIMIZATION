@@ -8,6 +8,6 @@ for i in range(10):
 a = grid
 
 
-line = rg.Line(grid[0], grid[18])
+line = rg.Line(grid[0], grid[30])
 
 b = line.Length
